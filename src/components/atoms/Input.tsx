@@ -20,10 +20,10 @@ const Input: React.FC<InputProps> = ({
   variant = "auth",
 }) => {
   const baseStyles =
-    "w-full px-4 py-2 rounded-md transition focus:outline-none flex items-center gap-2";
+    "w-full px-4 py-2 rounded-md focus:outline-white flex items-center gap-2";
 
   const variantStyles = {
-    auth: "border border-gray-300 rounded-sm px-5 text-white",
+    auth: "border border-grayLight rounded-sm text-white",
     playlist:
       "bg-gray-700 text-white border-2 border-green-500 focus:border-green-400",
     search: "bg-gray-900 text-white border border-gray-700 rounded-full px-5",

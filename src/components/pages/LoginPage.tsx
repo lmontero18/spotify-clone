@@ -1,10 +1,9 @@
-import Input from "@/components/atoms/Input";
+import LoginTemplate from "@/components/templates/LoginTemplate";
 
 const LoginPage: React.FC = () => {
   return (
-    <div className="bg-black">
-      <h1 className="text-white">LoginPage</h1>
-      <Input variant="auth" />
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-grayGradientStart to-grayGradientEnd">
+      <LoginTemplate />
     </div>
   );
 };

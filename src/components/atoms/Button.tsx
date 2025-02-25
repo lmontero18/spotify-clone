@@ -1,5 +1,3 @@
-import React from "react";
-
 interface ButtonProps {
   text?: string;
   onClick?: () => void;
@@ -21,14 +19,13 @@ const Button: React.FC<ButtonProps> = ({
   icon,
   children,
 }) => {
-  const baseStyles =
-    "px-4 py-2 rounded-md transition font-medium flex items-center justify-center gap-2";
+  const baseStyles = "flex px-10 py-3 rounded-full transition gap-10";
 
   const variantStyles = {
     login:
-      "bg-green-500 text-black hover:bg-green-600 w-full rounded-full py-3 text-lg font-bold",
+      "bg-spotifyGreen text-black hover:bg-spotifyGreenLight rounded-full py-3 font-bold",
     social:
-      "bg-black border border-white text-white hover:bg-gray-900 w-full rounded-full py-3 font-semibold",
+      "bg-grayDark border border-grayLight text-white hover:border-white rounded-full font-bold",
     link: "text-white underline hover:text-gray-400 text-sm",
   };
 
@@ -41,8 +38,8 @@ const Button: React.FC<ButtonProps> = ({
       onClick={onClick}
       disabled={disabled}
     >
-      {icon}
-      {text}
+      {icon && <span className="text-2xl">{icon}</span>}
+      <span className="flex-1 text-center">{text}</span>
       {children}
     </button>
   );

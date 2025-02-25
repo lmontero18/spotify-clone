@@ -9,7 +9,7 @@ const MainLayout: React.FC = () => {
       <Header />
       <div className="flex flex-1">
         <Sidebar />
-        <main className="flex-1 overflow-auto p-4">
+        <main className="flex-1  overflow-auto p-4">
           <Outlet />
           {/* Aquí se renderizan las páginas (HomePage, ProfilePage, etc.) */}
         </main>

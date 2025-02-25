@@ -23,7 +23,7 @@ const Button: React.FC<ButtonProps> = ({
 
   const variantStyles = {
     login:
-      "bg-spotifyGreen text-black hover:bg-spotifyGreenLight rounded-full py-3 font-bold",
+      "bg-spotifyGreen text-black hover:bg-spotifyGreenLight rounded-full py-3 font-bold  hover:scale-105",
     social:
       "bg-grayDark border border-grayLight text-white hover:border-white rounded-full font-bold",
     link: "text-white underline hover:text-gray-400 text-sm",

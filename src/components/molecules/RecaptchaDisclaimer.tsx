@@ -1,6 +1,6 @@
 const ReCaptchaDisclaimer: React.FC = () => {
   return (
-    <footer className="absolute bottom-0 w-full py-8 bg-grayDark text-gray-400 text-xs text-center">
+    <footer className="w-full py-6 bg-grayDark text-gray-400 text-xs text-center fixed bottom-0 left-0">
       This site is protected by reCAPTCHA. The{" "}
       <a
         href="https://policies.google.com/terms"

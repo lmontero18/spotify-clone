@@ -20,6 +20,10 @@ export default {
         // Gradients
         grayGradientStart: "#2A2A2A",
         grayGradientEnd: "#000000",
+
+        // Red shades
+        redLight: "#FF6B6B",
+        redDark: "#A30000",
       },
     },
   },
